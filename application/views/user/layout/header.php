@@ -1475,12 +1475,12 @@ a.img,
                                                 สำหรับนักเรียน
                                             </a>
                                             <ul class="nav-dropdown">
-                                                <!-- <li>
+                                                <li>
                                                     <a href="http://academic.skj.ac.th/LoginStudent"><i
                                                             class="icofont-login icofont-1x"></i>
                                                         เข้าสู่ระบบ
                                                     </a>
-                                                </li> -->
+                                                </li>
                                                 <li>
                                                     <a href="<?= base_url('SkjClassroom') ?>">
                                                     <i class="icofont-library"></i>
@@ -1525,7 +1525,14 @@ a.img,
                                                         เข้าสู่ระบบ
                                                     </a>
                                                 </li>
+                                                <li>
+                                                    <a href="https://datastudio.google.com/u/0/reporting/3d8b7de2-3991-42bc-a6f3-a48fd0375f08/page/QMMSC?s=i39AaLyYRgs"><i
+                                                            class="icofont-save icofont-1x"></i>
+                                                        บันทึกเวลาเรียน
+                                                    </a>
+                                                </li>
                                             </ul>
+                                          
                                         </li>
                                         <li>
                                             <a href="<?= base_url('RoomLearning') ?>"><i

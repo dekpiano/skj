@@ -49,7 +49,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method welcome/not_404/mother_day12
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'welcome/father29_day';
 $route['404_override'] = 'welcome/not_404';
 $route['translate_uri_dashes'] = false;
 
@@ -60,17 +60,18 @@ $route['admin/login'] = 'admin/control_admin/login';
 
 $route['admin/news'] = 'admin/control_admin_news';
 $route['admin/news/add'] = 'admin/control_admin_news/add';
+$route['admin/news/update/(:any)'] = 'admin/control_admin_news/edit_news/$1';
 
 $route['admin/banner'] = 'admin/control_admin_banner';
 $route['admin/banner/add'] = 'admin/control_admin_banner/add';
+$route['admin/banner/update/(:any)/(:any)'] = 'admin/control_admin_banner/edit_banner/$1/$2';
 
 $route['admin/journal'] = 'admin/control_admin_journal';
 $route['admin/journal/add'] = 'admin/control_admin_journal/add';
 
 $route['admin/personnel'] = 'admin/control_admin_personnel';
 $route['admin/personnel/add'] = 'admin/control_admin_personnel/add';
-$route['admin/personnel/profile'] =
-    'admin/control_admin_personnel/profile_personnel';
+$route['admin/personnel/profile'] = 'admin/control_admin_personnel/profile_personnel';
 
 $route['admin/position'] = 'admin/control_admin_position';
 $route['admin/position/add'] = 'admin/control_admin_position/add';
@@ -95,6 +96,7 @@ $route['admin/recruitstudent/add'] = 'admin/control_admin_recruitstudent/add';
 
 $route['admin/images'] = 'admin/control_admin_images';
 $route['admin/images/add'] = 'admin/control_admin_images/add';
+$route['admin/images/update/(:any)'] = 'admin/control_admin_images/edit_images/$1';
 
 $route['admin/institutionO'] = 'admin/control_admin_institutionO';
 $route['admin/institutionO/add'] = 'admin/control_admin_institutionO/add';

@@ -23,13 +23,15 @@
 </style>
 
 
-
-
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -38,20 +40,22 @@
         <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
         </div>
+        <!-- <div class="carousel-item ">
+            <?php $this->load->view('user/popupSpecial/skj-640722-SKJRELAX.php'); ?>
+        </div> -->
+
+        <div class="carousel-item">
+            <?php $this->load->view('user/popupSpecial/skj-640629-Online.php'); ?>
+        </div>
         <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640531-StudentList.php'); ?>
+            <?php $this->load->view('user/popupSpecial/skj-640610-Classroom.php'); ?>
         </div>
         <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640528-emailSchool.php'); ?>
         </div>
-        <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640517-schoolback.php'); ?>
-        </div>
-        <div class="carousel-item">
-            <?php $this->load->view('user/popupSpecial/skj-640429-Announcement-postponement.php'); ?>
-        </div>
-        
-        
+     
+
+
 
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
