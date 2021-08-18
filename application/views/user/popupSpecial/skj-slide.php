@@ -33,6 +33,9 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
+            <?php $this->load->view('user/popupSpecial/skj-640818-SciDay.php'); ?>
+        </div>
+        <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
         </div>
         <div class="carousel-item ">
