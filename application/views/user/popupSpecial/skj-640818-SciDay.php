@@ -49,11 +49,11 @@
 
 <div class="skjSciDay" style=" background-image: linear-gradient(180deg, #5552fd, #2576d0)">
     <div class="container ">
-        <div class="row vh-100"></div>
-        <div class="col-md-12 col-lg-4 align-self-md-center banner">
+        <div class="row vh-100">
+        <div class="col-md-12 col-lg-4 align-self-md-center banner animate__animated animate__fadeInLeft animate__delay-1s">
                 <img src="<?=base_url('uploads/banner/64SciDay/111.png');?>" alt="" class="img-fluid">
             </div>
-        <div class="col-md-12 col-lg-4 align-self-md-center Vlogger-setion1">
+        <div class="col-md-12 col-lg-4 align-self-md-center Vlogger-setion1 animate__animated animate__bounceIn animate__delay-2s" >
                 <div class="text-center">
                     <h2 class="text-white"> สัปดาห์วิทยาศาสตร์ 2564</h2>
                     <h1 class="text-white"> ขอเชิญชมนิทรรศการ </h1>
@@ -61,7 +61,7 @@
                         class="btn btn-primary">ชมนิทรรศการ</a>
                 </div>
             </div>
-        <div class="col-md-12 col-lg-4 align-self-md-center banner">
+        <div class="col-md-12 col-lg-4 align-self-md-center banner animate__animated animate__fadeInRight animate__delay-1s">
                 <img src="<?=base_url('uploads/banner/64SciDay/222.png');?>" alt="" class="img-fluid">
             </div>
            

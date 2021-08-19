@@ -44,7 +44,7 @@
     <link href="<?= base_url() ?>/asset/user/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= base_url() ?>/asset/user/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="<?= base_url() ?>/asset/user/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="<?= base_url() ?>/asset/user/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="<?= base_url() ?>/asset/user/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="<?= base_url() ?>/asset/user/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="<?= base_url() ?>asset/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -54,7 +54,6 @@
     <link href="<?= base_url() ?>/asset/user/css/style.css?v=1001" rel="stylesheet">
     <link href="<?= base_url() ?>/asset/user/css/circles.css" rel="stylesheet">
     <link href="<?= base_url() ?>/asset/user/css/footerskj.css" rel="stylesheet">
-    <link href="<?= base_url() ?>/asset/user/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url() ?>asset/user/css/smartwizard/smart_wizard.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>asset/user/css/smartwizard/smart_wizard_theme_arrows.min.css">
     <link href="<?= base_url() ?>/asset/css/snowy.css" rel="stylesheet">
@@ -1316,7 +1315,7 @@ a.img,
 
 <body>
     <!-- LOADER -->
-    <div class="se-pre-con"></div>
+    <!-- <div class="se-pre-con"></div> -->
 
     <!-- end loader -->
     <div class="d-sm-block bg-top">
