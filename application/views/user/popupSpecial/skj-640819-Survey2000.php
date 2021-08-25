@@ -48,6 +48,9 @@
     .skjSurvey h2 {
         font-size: 2rem;
     }
+    .skjSurvey h3 {
+        font-size: 1.5rem;
+    }
 
 }
 </style>
@@ -57,14 +60,15 @@
         <div class="row vh-100">      
         <div class="col-md-12 col-lg-6 align-self-center skjSurvey-setion1 animate__animated animate__fadeInLeft animate__delay-1s">
                 <div class="">
-                    <h1 class="text-white"> แบบสำรวจ...</h1>
-                    <h2 class="text-white"> ขอรับเงินโครงการให้ความช่วยเหลือบรรเทาภาระค่าใช้จ่ายด้านการศึกษาในช่วงการแพร่ระบาดของโรคโควิด-19  </h2>
-                    <a href="https://skj.ac.th/news/newsDetail/news_085" target="_blank"
-                        class="btn btn-primary">กรอกแบบสำรวจ</a>
+                    <h1 class="text-white"> ขอแสดงความยินดี <i class="icofont-medal"></i></h1>
+                    <h2 class="text-white"> ได้รับรางวัลรองชนะเลิศอันดับสอง ระดับประเทศ   </h2>
+                    <h3 class="text-white"> การประกวดการแสดงทางวิทยาศาสตร์ (Science  Show) ในรูปแบบ New normal ปี 2564</h3>
+                    <a href="https://www.facebook.com/SKJSCITECH/posts/3136922969875931" target="_blank"
+                        class="btn btn-primary">ดูรายละเอียดเพิ่มเติม</a>
                 </div>
             </div>
         <div class="col-md-12 col-lg-6 align-self-md-center banner animate__animated animate__fadeInRight animate__delay-1s">
-                <img src="<?=base_url('uploads/banner/64Survey2000/banner.png');?>" alt="" class="img-fluid">
+                <img src="<?=base_url('uploads/banner/64Survey2000/banner1.png');?>" alt="" class="img-fluid">
             </div>
            
            
