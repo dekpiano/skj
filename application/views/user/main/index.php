@@ -1,7 +1,7 @@
 <!-- Banner -->
 <?php $this->load->view('user/banner/banner_main.php') ?>
 <!--End Banner-->
-
+<?php $this->load->view('user/services/services_skj.php'); ?>
 <style>
     /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -35,7 +35,7 @@
 <?php $this->load->view('user/popupSpecial/skj-covid19.php'); ?>
 <?php $this->load->view('user/video/video_main.php'); ?>
 
-<?php $this->load->view('user/services/services_skj.php'); ?>
+
 
 <!-- director_main -->
 <?php $this->load->view('user/director/director_main.php'); ?>

@@ -34,16 +34,17 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="carousel-item active">
+    <div class="carousel-item active">
+            <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
+        </div>   
+        <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640819-Survey2000.php'); ?>
         </div>
 
         <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640818-SciDay.php'); ?>
         </div>
-        <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
-        </div>   
+        
 
         <div class="carousel-item">
             <?php $this->load->view('user/popupSpecial/skj-640629-Online.php'); ?>

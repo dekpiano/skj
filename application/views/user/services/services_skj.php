@@ -83,7 +83,49 @@
          </div>
 
          <div class="row">
+               <div class="col-lg-4 col-md-6 col-sm-6 ">
+                 <a href="https://academic.skj.ac.th/ClassSchedule">
+                     <div class="serviceBox">
+                         <div class="service-icon">
+                         <i class="icofont-calendar"></i>
+                         </div>
+                         <h3 class="title">ตารางเรียน</h3>
+                         <p class="description">
+                             ดูตารางออนไลน์ ได้ตั้งแต่ ม.1 - ม.6
+                         </p>
+                     </div>
+                 </a>
+             </div>
+
              <div class="col-lg-4 col-md-6 col-sm-6 ">
+                 <a href="https://academic.skj.ac.th/LearningOnline">
+                     <div class="serviceBox">
+                         <div class="service-icon">
+                         <i class="icofont-learn"></i>
+                         </div>
+                         <h3 class="title">ห้องเรียนออนไลน์</h3>
+                         <p class="description">
+                             ค้นหาห้องเรียนออนไลน์ได้ ทุกกลุ่มสาระการเรียน
+                         </p>
+                     </div>
+                 </a>
+             </div>
+             
+             <div class="col-lg-4 col-md-6 col-sm-6 ">
+                 <a href="https://academic.skj.ac.th/StudentsList">
+                     <div class="serviceBox">
+                         <div class="service-icon">
+                         <i class="icofont-users-alt-2"></i>
+                         </div>
+                         <h3 class="title">รายชื่อนักเรียน</h3>
+                         <p class="description">
+                             รายชื่อนักเรียนตามห้องเรียน
+                         </p>
+                     </div>
+                 </a>
+             </div>
+
+             <!-- <div class="col-lg-4 col-md-6 col-sm-6 ">
                  <a href="http://academic.skj.ac.th">
                      <div class="serviceBox">
                          <div class="service-icon">
@@ -95,9 +137,9 @@
                          </p>
                      </div>
                  </a>
-             </div>
+             </div> -->
 
-             <div class="col-lg-4 col-md-6 col-sm-6 ">
+             <!-- <div class="col-lg-4 col-md-6 col-sm-6 ">
                  <a href="#">
                      <div class="serviceBox">
                          <div class="service-icon">
@@ -109,8 +151,8 @@
                          </p>
                      </div>
                  </a>
-             </div>
-             <div class="col-lg-4 col-md-6 col-sm-6 ">
+             </div> -->
+             <!-- <div class="col-lg-4 col-md-6 col-sm-6 ">
                  <a href="#">
                      <div class="serviceBox">
                          <div class="service-icon">
@@ -122,8 +164,8 @@
                          </p>
                      </div>
                  </a>
-             </div>
-             <div class="col-lg-4 col-md-6 col-sm-6 ">
+             </div> -->
+             <!-- <div class="col-lg-4 col-md-6 col-sm-6 ">
                  <a href="<?= base_url('document') ?>">
                      <div class="serviceBox">
                          <div class="service-icon">
@@ -135,7 +177,7 @@
                          </p>
                      </div>
                  </a>
-             </div>
+             </div> -->
              <div class="col-lg-4 col-md-6 col-sm-6 ">
                  <a href="<?= base_url('logoSKJ') ?>">
                      <div class="serviceBox">
