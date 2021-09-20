@@ -85,17 +85,14 @@
         logged_out_greeting="สวัสดี สวนกุหลาบวิทยาลัย (จิรประวัติ)  นครสวรรค์ ยินดีต้อนรับ มีอะไรให้เราช่่วย ">
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165844207-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4XVY09LWJ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-165844207-1');
-    </script>
+  gtag('config', 'G-4XVY09LWJ8');
+</script>
 
 </head>
 <div id="fb-root"></div>
@@ -1536,6 +1533,12 @@ a.img,
                                             <a href="<?= base_url('RoomLearning') ?>"><i
                                                     class="icofont-learn icofont-1x"></i>
                                                 ห้องเรียนออนไลน์
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://bit.ly/Skjonlineteaching">
+                                            <i class="icofont-live-support"></i>
+                                                การสอนออนไลน์
                                             </a>
                                         </li>
                                         <li>
