@@ -7,20 +7,24 @@
     }
 
     .skjr9 h1 {
+        font-family: 'Charmonman', cursive;
         font-size: 2rem;
         color: #f8488d;
     }
 
     .skjr9 h2 {
+        font-family: 'Charmonman', cursive;
         font-size: 1.5rem;
         color: #249ffd;
     }
 
     .skjr9 h3 {
+        font-family: 'Charmonman', cursive;
         font-size: 1.3rem;
     }
 
     .skjr9 h5 {
+        font-family: 'Charmonman', cursive;
         font-size: 1.1rem;
     }
 
@@ -40,16 +44,19 @@
     }
 
     .skjr9 h1 {
+        font-family: 'Charmonman', cursive;
         font-size: 3rem;
         color: #f8488d;
     }
 
     .skjr9 h2 {
+        font-family: 'Charmonman', cursive;
         font-size: 2rem;
         color: #249ffd;
     }
 
     .skjr9 h3 {
+        font-family: 'Charmonman', cursive;
         font-size: 1.5rem;
     }
 
@@ -67,16 +74,19 @@
     }
 
     .skjr9 h1 {
+        font-family: 'Charmonman', cursive;
         font-size: 3.2rem;
         color: #f8488d;
     }
 
     .skjr9 h2 {
+        font-family: 'Charmonman', cursive;
         font-size: 1.8rem;
         color: #249ffd;
     }
 
     .skjr9 h3 {
+        font-family: 'Charmonman', cursive;
         font-size: 1.5rem;
     }
 
@@ -91,19 +101,26 @@
     .skjr9 {}
 
     .skjr9 h1 {
-        font-size: 3rem;
+        font-family: 'Charmonman', cursive;
+        font-size: 4rem;
         color: #f8488d;
     }
 
     .skjr9 h2 {
-        font-size: 2rem;
+        font-family: 'Charmonman', cursive;
+        font-size: 2.3rem;
         color: #249ffd;
     }
 
     .skjr9 h3 {
-        font-size: 1.5rem;
+        font-family: 'Charmonman', cursive;
+        font-size: 1.6rem;
     }
-
+    .skjr9 h5 {
+        font-family: 'Charmonman', cursive;
+        font-size: 1.6rem;
+    }
+    
 }
 
 .bg-holder {
@@ -130,8 +147,8 @@
     <div class="container ">
         <div class="row vh-100">
             <div
-                class="col-md-12 col-lg-7 col-xl-7 align-self-center skjr9-setion1 animate__animated animate__fadeInRight animate__delay-2s">
-                <div class="">
+                class="col-md-12 col-lg-7 col-xl-7 align-self-center skjr9-setion1 animate__animated animate__fadeInLeft animate__delay-1s">
+                <div class="" style="text-shadow: 0.1em 0.1em 0.2em black;">
                     <h2 class="text-white"> วันคล้ายวันสวรรคต </h2>
                     <h1 class="text-white"> 13 ตุลาคม </h1>
                     <h2 class="text-white"> พระบาทสมเด็จพระบรมชนกาธิเบศร <br> มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร </h2>
@@ -143,7 +160,7 @@
                 </div>
             </div>
             <div
-                class="col-md-12 col-lg-5 col-xl-5 align-self-center banner animate__animated animate__fadeInLeft animate__delay-1s">
+                class="col-md-12 col-lg-5 col-xl-5 align-self-center banner animate__animated animate__fadeInRight animate__delay-1s ">
                 <center>
                     <img src="<?=base_url('uploads/banner/r9_13.png');?>" alt="" class="img-fluid">
                 </center>

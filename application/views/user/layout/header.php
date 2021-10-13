@@ -39,6 +39,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+
 
     <!-- Vendor CSS Files -->
     <link href="<?= base_url() ?>/asset/user/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,14 +87,17 @@
         logged_out_greeting="สวัสดี สวนกุหลาบวิทยาลัย (จิรประวัติ)  นครสวรรค์ ยินดีต้อนรับ มีอะไรให้เราช่่วย ">
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4XVY09LWJ8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XVY09LWJ8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-4XVY09LWJ8');
-</script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4XVY09LWJ8');
+    </script>
 
 </head>
 <div id="fb-root"></div>
@@ -1479,31 +1484,31 @@ a.img,
                                                 </li>
                                                 <li>
                                                     <a href="<?= base_url('SkjClassroom') ?>">
-                                                    <i class="icofont-library"></i>
+                                                        <i class="icofont-library"></i>
                                                         ห้องรวมนักเรียน
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="http://academic.skj.ac.th/LoginStudent">
-                                                    <i class="icofont-read-book"></i>
+                                                        <i class="icofont-read-book"></i>
                                                         ผลการเรียน
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="http://academic.skj.ac.th/ClassSchedule">
-                                                    <i class="icofont-table"></i>
+                                                        <i class="icofont-table"></i>
                                                         ตารางเรียน
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="http://academic.skj.ac.th/ExamSchedule">
-                                                    <i class="icofont-table"></i>
+                                                        <i class="icofont-table"></i>
                                                         ตารางสอบ
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="http://academic.skj.ac.th/StudentsList">
-                                                    <i class="icofont-list"></i>
+                                                        <i class="icofont-list"></i>
                                                         รายชื่อนักเรียน
                                                     </a>
                                                 </li>
@@ -1527,7 +1532,7 @@ a.img,
                                                     </a>
                                                 </li>
                                             </ul>
-                                          
+
                                         </li>
                                         <li>
                                             <a href="<?= base_url('RoomLearning') ?>"><i
@@ -1537,7 +1542,7 @@ a.img,
                                         </li>
                                         <li>
                                             <a href="https://bit.ly/Skjonlineteaching">
-                                            <i class="icofont-live-support"></i>
+                                                <i class="icofont-live-support"></i>
                                                 การสอนออนไลน์
                                             </a>
                                         </li>
