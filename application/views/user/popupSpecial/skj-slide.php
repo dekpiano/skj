@@ -35,22 +35,16 @@
     </ol>
     <div class="carousel-inner">
 
-        <div class="carousel-item active">
+    <div class="carousel-item active">
+            <?php $this->load->view('user/popupSpecial/skj-641013-r9.php'); ?>
+        </div>
+        <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-641008-Vaccine.php'); ?>
         </div>
-        <!-- <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640914-kruNu.php'); ?>
-        </div>
+      
         <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
-        </div>
-        <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640819-Survey2000.php'); ?>
-        </div>
-
-        <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640818-SciDay.php'); ?>
-        </div>
+        </div>  
 
         <div class="carousel-item">
             <?php $this->load->view('user/popupSpecial/skj-640629-Online.php'); ?>
@@ -60,7 +54,7 @@
         </div>
         <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640528-emailSchool.php'); ?>
-        </div> -->
+        </div> 
 
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
