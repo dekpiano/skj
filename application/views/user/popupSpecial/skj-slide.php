@@ -35,21 +35,14 @@
     </ol>
     <div class="carousel-inner">
 
-    <div class="carousel-item active">
-            <?php $this->load->view('user/popupSpecial/skj-641013-r9.php'); ?>
-        </div>
         <!-- <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-641008-Vaccine.php'); ?>
-        </div>
-      
-        <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
-        </div>  
-
-        <div class="carousel-item">
+            <?php $this->load->view('user/popupSpecial/skj-641019-Vaccine2.php'); ?>
+        </div> -->
+        
+        <div class="carousel-item active">
             <?php $this->load->view('user/popupSpecial/skj-640629-Online.php'); ?>
         </div>
-        <div class="carousel-item ">
+        <!-- <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640610-Classroom.php'); ?>
         </div>
         <div class="carousel-item ">
