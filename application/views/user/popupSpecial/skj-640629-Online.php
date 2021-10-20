@@ -3,7 +3,7 @@
 @media (max-width: 575.98px) {
     .skjOnline .banner {
         padding-top: 0px;
-        margin-top: -254px;
+        margin-top: -290px;
     }
 
     .skjOnline .setion-text {
@@ -205,12 +205,12 @@
             <div class="col-lg-6 col-md-12  setion-text">
                 <div class="text-center">
                     <h1><b>1 พฤศจิกายน 2564</b></h1>
-                    <h2>เปิดเรียน ON-SITE ตามนโยบาย ศธ.</h2>
+                    <h2>เปิดเรียนภาคเรียนที่ 2 ปีการศึกษา 2564</h2>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12  banner">
                 <h3 class="text-center">
-                    ยังเปิดเรียนในรูปแบบ
+                    รูปแบบการเรียน
                 </h3>
                 <div class="row" style="place-content: center;">
                     <div class="col-md-3 col-6 block">
@@ -221,7 +221,7 @@
                     </div>
                     <div class="col-md-3 col-6 block">
                         <div class="circle">
-                            <p><u>ONLINE</u></p>
+                            <p><u>ON LINE</u></p>
                             <p>เรียนผ่านอินเตอร์เน็ต</p>
                         </div>
                     </div>
