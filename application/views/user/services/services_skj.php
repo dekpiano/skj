@@ -218,6 +218,19 @@
                      </div>
                  </a>
              </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 ">
+                 <a  href="<?=base_url('guidance');?>">
+                     <div class="serviceBox">
+                         <div class="service-icon">
+                         <i class="icofont-ebook"></i>
+                         </div>
+                         <h3 class="title">ทุนการศึกษา</h3>
+                         <p class="description">
+                             ขอทุนการศึกษาของโรงเรียน
+                         </p>
+                     </div>
+                 </a>
+             </div>
          </div>
 
          <h5 class="mt-3">หน่วยงานอื่น ๆ</h5>

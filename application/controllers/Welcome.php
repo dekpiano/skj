@@ -70,6 +70,10 @@ class Welcome extends CI_Controller
     {
         $this->load->view('user/popupSpecial/father29_day.php');
     }
+    public function father5_day()
+    {
+        $this->load->view('user/popupSpecial/father5_day.php');
+    }
 
 
     

@@ -1320,6 +1320,7 @@ a.img,
     <!-- <div class="se-pre-con"></div> -->
 
     <!-- end loader -->
+
     <div class="d-sm-block bg-top">
 
 
@@ -1568,6 +1569,13 @@ a.img,
                                             <a href="<?= base_url('Email') ?>">
                                                 <i class="icofont-email"></i>
                                                 Email โรงเรียน
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="<?= base_url('guidance') ?>">
+                                            <i class="icofont-ebook"></i>
+                                               ทุนการศึกษา
                                             </a>
                                         </li>
 

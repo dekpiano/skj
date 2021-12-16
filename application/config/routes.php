@@ -151,7 +151,7 @@ $route['Personnel/(:any)'] = 'control_personnel/show_per_type/$1';
 $route['document'] = 'control_document/document_all';
 $route['document/ListStudent'] = 'control_document/document_liststudent';
 
-//
+//โลโก้
 $route['logoSKJ'] = 'control_document/document_logoSKJ';
 // ติดต่อ
 $route['Contact'] = 'control_contact/contact_main';
@@ -163,3 +163,5 @@ $route['Email'] = 'Control_email';
 $route['RoomLearning'] = 'Control_RoomLearning';
 //ห้องรวมนักเรียน
 $route['SkjClassroom'] = 'Control_SkjClassroom';
+//ทุการศึกษษ
+$route['guidance'] = 'control_guidance/guidance_main';

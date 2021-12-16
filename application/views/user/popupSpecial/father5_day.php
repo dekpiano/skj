@@ -114,14 +114,6 @@ button {
     justify-content: center;
 }
 
-h1 {
-    font-size: 50px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
 
 h1,
 h2,
@@ -136,7 +128,61 @@ h3 {
     text-shadow: #000 3px 1px 2px;
 }
 
-/* tablets */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    img {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .golden-btn {
+        font-size: 10px;
+    }
+
+    .btn-father {
+        font-size: 10px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    img {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+     h3 {
+        font-size: 14px;
+    }
+
+    .golden-btn {
+        font-size: 10px;
+    }
+
+    .btn-father {
+        font-size: 10px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     img {
         width: 400px;
@@ -159,67 +205,45 @@ h3 {
     }
 }
 
-@media (max-width: 575.98px) {
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
     img {
-        width: 300px;
+        width: 600px;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     h3 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .golden-btn {
-        font-size: 10px;
-    }
-
-    .btn-father {
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
-@media (min-width: 1366px) {
-    img {
-        width: 540px;
-    }
-}
-
-@media (min-width: 1400px) {
-    img {
-        width: 700px;
-    }
-
-    .btn-father {
-        font-size: 24px;
-    }
-}
-
+/* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     img {
-        width: 720px;
+        width: 800px;
     }
-
-    .btn-father {
-        font-size: 16px;
-    }
-
     h1 {
-        font-size: 44px;
+        font-size: 40px;
     }
-
     h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
-
     h3 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .golden-btn {
+        font-size: 18px;
     }
 }
 
@@ -265,7 +289,7 @@ h3 {
                 </h2><br>
 
                 <h1 data-aos="zoom-in-up" data-aos-delay="1000" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช บรมนาถบพิตร</h1><br>
+                    data-aos-duration="2000">พระบาทสมเด็จพระบรมชนกาธิเบศร มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร</h1><br>
 
                 <H3 data-aos="zoom-in" data-aos-delay="500"> ปวงข้าพระพุทธเจ้า ขอน้อมเกล้าน้อมกระหม่อมรำลึกในพระมหากรุณาธิคุณเป็นล้นพ้นหาที่สุดมิได้</H3>
 
