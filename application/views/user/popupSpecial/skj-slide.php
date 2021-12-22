@@ -34,8 +34,11 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
     </ol>
     <div class="carousel-inner">
-     
-        <div class="carousel-item active">
+    
+    <div class="carousel-item active">
+            <?php $this->load->view('user/popupSpecial/skj-641225-Merry2022.php'); ?>
+        </div>
+        <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
         </div>
 

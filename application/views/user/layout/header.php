@@ -1472,6 +1472,12 @@ a.img,
                                         <p>SKJ บริการ</p>
                                     </a>
                                     <ul class="nav-dropdown">
+                                    <li>
+                                            <a href="https://admission.skj.ac.th/">
+                                            <i class="icofont-laptop-alt"></i>
+                                               รับสมัครนักเรียน
+                                            </a>
+                                        </li>
                                         <li>
                                             <a href="#"><i class="icofont-group-students icofont-1x"></i>
                                                 สำหรับนักเรียน

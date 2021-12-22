@@ -231,6 +231,19 @@
                      </div>
                  </a>
              </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 ">
+                 <a  href="https://admission.skj.ac.th/">
+                     <div class="serviceBox">
+                         <div class="service-icon">
+                         <i class="icofont-laptop-alt"></i>
+                         </div>
+                         <h3 class="title">สมัครเรียน</h3>
+                         <p class="description">
+                             รับสมัครนักเรียน ม.1 และ ม.4
+                         </p>
+                     </div>
+                 </a>
+             </div>
          </div>
 
          <h5 class="mt-3">หน่วยงานอื่น ๆ</h5>

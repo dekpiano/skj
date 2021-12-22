@@ -1,4 +1,4 @@
-<div id="loader"></div>
+<!-- <div id="loader"></div> -->
 	<!-- Parallax Container -->
 	<div id="container" class="parallax-container snow">
 		<ul id="christmas_scene" class="christmas-scene" >
