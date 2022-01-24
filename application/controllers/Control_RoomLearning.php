@@ -32,10 +32,12 @@ class Control_RoomLearning extends CI_Controller {
 		$data = $this->dataAll();		
 		$data['title'] ="ห้องเรียนออนไลน์";
 		$data['description'] = "เกี่ยวกับการเรียนการสอนออนไลน์";
-		$this->load->view('user/layout/header.php',$data);
-		$this->load->view('user/RoomLearning/LearningOnlineMain.php');
-		$this->load->view('user/layout/footer.php');
-	}
+	// 	$this->load->view('user/layout/header.php',$data);
+	// 	$this->load->view('user/RoomLearning/LearningOnlineMain.php');
+	// 	$this->load->view('user/layout/footer.php');
+
+	header("location:https://academic.skj.ac.th/LearningOnline");
+	 }
 
 
 }

@@ -1584,6 +1584,12 @@ a.img,
                                                ทุนการศึกษา
                                             </a>
                                         </li>
+                                        <li>
+                                            <a href="https://learnsuan.skj.ac.th/">
+                                            <i class="icofont-children-care"></i>
+                                            สวนกุหลาบศึกษา
+                                            </a>
+                                        </li>
 
                                     </ul>
                                 </li>

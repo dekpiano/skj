@@ -179,6 +179,45 @@
                  </a>
              </div> -->
              <div class="col-lg-4 col-md-6 col-sm-6 ">
+                 <a  href="<?=base_url('guidance');?>">
+                     <div class="serviceBox">
+                         <div class="service-icon">
+                         <i class="icofont-ebook"></i>
+                         </div>
+                         <h3 class="title">ทุนการศึกษา</h3>
+                         <p class="description">
+                             ขอทุนการศึกษาของโรงเรียน
+                         </p>
+                     </div>
+                 </a>
+             </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 ">
+                 <a  href="https://admission.skj.ac.th/">
+                     <div class="serviceBox">
+                         <div class="service-icon">
+                         <i class="icofont-laptop-alt"></i>
+                         </div>
+                         <h3 class="title">สมัครเรียน</h3>
+                         <p class="description">
+                             รับสมัครนักเรียน ม.1 และ ม.4
+                         </p>
+                     </div>
+                 </a>
+             </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 ">
+                 <a  href="https://learnsuan.skj.ac.th/">
+                     <div class="serviceBox">
+                         <div class="service-icon">
+                         <i class="icofont-children-care"></i>
+                         </div>
+                         <h3 class="title">สวนกุหลาบศึกษา</h3>
+                         <p class="description">
+                            รู้จักกับสวนกุหลาบฯ เรา
+                         </p>
+                     </div>
+                 </a>
+             </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 ">
                  <a href="<?= base_url('logoSKJ') ?>">
                      <div class="serviceBox">
                          <div class="service-icon">
@@ -218,32 +257,7 @@
                      </div>
                  </a>
              </div>
-             <div class="col-lg-4 col-md-6 col-sm-6 ">
-                 <a  href="<?=base_url('guidance');?>">
-                     <div class="serviceBox">
-                         <div class="service-icon">
-                         <i class="icofont-ebook"></i>
-                         </div>
-                         <h3 class="title">ทุนการศึกษา</h3>
-                         <p class="description">
-                             ขอทุนการศึกษาของโรงเรียน
-                         </p>
-                     </div>
-                 </a>
-             </div>
-             <div class="col-lg-4 col-md-6 col-sm-6 ">
-                 <a  href="https://admission.skj.ac.th/">
-                     <div class="serviceBox">
-                         <div class="service-icon">
-                         <i class="icofont-laptop-alt"></i>
-                         </div>
-                         <h3 class="title">สมัครเรียน</h3>
-                         <p class="description">
-                             รับสมัครนักเรียน ม.1 และ ม.4
-                         </p>
-                     </div>
-                 </a>
-             </div>
+            
          </div>
 
          <h5 class="mt-3">หน่วยงานอื่น ๆ</h5>
@@ -261,7 +275,6 @@
                      <img loading="lazy"
                          src="https://learn.teacherpd.ipst.ac.th/static/ipst-edx/images/logo.075b62234427.png"
                          class="img-fluid">
-
                  </a>
              </div>
          </div>

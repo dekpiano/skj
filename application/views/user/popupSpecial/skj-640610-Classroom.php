@@ -57,7 +57,7 @@
 
 <div class="skjClassroom " style=" background-image: linear-gradient(180deg, #52a0fd, #e8f2fd);">
 
-    <a href="<?=base_url('RoomLearning');?>">
+    <a href="https://academic.skj.ac.th/LearningOnline">
         <img src="<?=base_url('uploads/banner/64Classroom/banner.png');?>" alt="ห้องเรียนออนไลน์" class="w-100">
     </a>
 

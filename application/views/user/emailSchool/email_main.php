@@ -59,8 +59,11 @@
                         <h2 class="h5">สมัครขอใช้งานอีเมล์โรงเรียน</h2>
                         <p class="font-italic text-muted">ข้อดี พื้นที่การใช้งานไม่จำกัด</p>
                         <a target="_blank"
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSffvo07h9TXVYYjfgCp3_7VCIHW-lT40gDYLNrkHIAfXRjO-g/viewform?usp=sf_link"
-                            class="btn btn-outline-primary">สมัครใช้งาน</a>
+                            href="https://lin.ee/nPgf2TP"
+                            class="btn btn-outline-primary">ขอใช้งานอีเมล</a>
+                            <a target="_blank"
+                            href="https://lin.ee/nPgf2TP"
+                            class="btn btn-outline-info">แจ้งปัญหาการใช้งาน</a>
                     </div>
                 </div>
             </div>

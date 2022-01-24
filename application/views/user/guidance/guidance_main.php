@@ -113,16 +113,19 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <i class="fa fa-users icon-lg icon-yellow icon-bg-yellow icon-bg-circle mb-3 mr-5 float-left"
-                                   ></i>
+                                <i
+                                    class="fa fa-users icon-lg icon-yellow icon-bg-yellow icon-bg-circle mb-3 mr-5 float-left"></i>
                                 <a href="https://forms.gle/ijRwS15JfeHitweG7" target="_blank">
                                     <h4 class="mt-0 mb-3">นักเรียนทุนราชสกุลจิรประวัติ</h4>
                                 </a>
                             </div>
                             <div class="col-lg-6">
-                              <div class="mt-0 h4 text-right"> <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                              <a href="https://drive.google.com/file/d/1foStVnXu7XXWJXL2AcmOXvUu4SZP2U23/view?usp=sharing" target="_blank">อ่านประกาศ</a> 
-                            </div> 
+                                <div class="mt-0 h4 text-right"> <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                    <a href="https://drive.google.com/file/d/1foStVnXu7XXWJXL2AcmOXvUu4SZP2U23/view?usp=sharing"
+                                        target="_blank">อ่านประกาศ</a>
+
+                                        <p class="text-danger"> <small>***ขยายเวลารับสมัครทุนถึงวันที่ 12 มกราคม 2565***</small> </p>
+                                </div>
                             </div>
                         </div>
 
