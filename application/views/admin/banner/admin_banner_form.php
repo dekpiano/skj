@@ -86,8 +86,8 @@
                                         <div class="upload-btn-wrapper">
                                             <button class="btn1">เลือกไฟล์</button>
                                             <input type="file" name="banner_img" id="banner_img" class="banner_img" />
-                                            <small id="emailHelp" class="form-text text-muted">ขนาดรูปที่อัฟโหลด 1920 X
-                                                720 px</small>
+                                            <small id="emailHelp" class="form-text text-muted">ขนาดรูปที่อัฟโหลด 1440 X
+                                                490 px</small>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@
                                     <label for="banner_namethai" class="col-sm-2 col-form-label"></label>
                                     <div class="col-sm-10">
                                         <img id="blah" class="img-fluid blah"
-                                            src="<?php echo  @$banner[0]->banner_img == '' ? '#' : base_url().'uploads/banner/'.$banner[0]->banner_img; ?>"
+                                            src="<?php echo  @$banner[0]->banner_img == '' ? '#' : base_url().'uploads/banner/all/'.$banner[0]->banner_img; ?>"
                                             alt="" />
                                     </div>
                                 </div>

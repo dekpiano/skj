@@ -60,29 +60,50 @@ class Control_admin_banner extends CI_Controller {
 		$this->load->view('admin/layout/admin_footer.php');
 	}
 
+	private function resizeImage($file,$width,$height,$quality){
+		$image = $file;
+		$this->load->library('image_lib'); 
+		$config['image_library'] = 'gd2';
+		$config['source_image'] = $image['full_path'];
+		$config['maintain_ratio'] = FALSE; // ปรับขนาดโดยยังรักษาสัดส่วนของรูปไว้
+		$config['quality'] = $quality; // ความละเอียดของรูปใหม่สูงสุด 100
+		$config['width'] = $width; // ความกว้างของรูปภาพ
+		$config['height'] = $height; // ความสูงของรูปภาพ
+		$image = base_url("uploads/".$image['file_name']);		
+		$this->image_lib->initialize($config);
+		if ( ! $this->image_lib->resize())
+		{
+		  echo $this->image_lib->display_errors();
+		}
+	}
+
 	public function insert_banner()
 	{
 		//print_r($_FILES);
 		
-		$config['upload_path']   = 'uploads/banner/'; //Folder สำหรับ เก็บ ไฟล์ที่  Upload
-         $config['allowed_types'] = 'gif|jpg|png'; //รูปแบบไฟล์ที่ อนุญาตให้ Upload ได้
+		$config['upload_path']   = 'uploads/banner/all/'; //Folder สำหรับ เก็บ ไฟล์ที่  Upload
+         $config['allowed_types'] = 'gif|jpg|jpeg|png'; //รูปแบบไฟล์ที่ อนุญาตให้ Upload ได้
          $config['max_size']      = 0; //ขนาดไฟล์สูงสุดที่ Upload ได้ (กรณีไม่จำกัดขนาด กำหนดเป็น 0)
-         $config['max_width']     = 1920; //ขนาดความกว้างสูงสุด (กรณีไม่จำกัดขนาด กำหนดเป็น 0)
-         $config['max_height']    = 720;  //ขนาดความสูงสูงสดุ (กรณีไม่จำกัดขนาด กำหนดเป็น 0)
+         $config['max_width']     = 0; //ขนาดความกว้างสูงสุด (กรณีไม่จำกัดขนาด กำหนดเป็น 0)
+         $config['max_height']    = 0;  //ขนาดความสูงสูงสดุ (กรณีไม่จำกัดขนาด กำหนดเป็น 0)
          $config['encrypt_name']  = true; //กำหนดเป็น true ให้ระบบ เปลียนชื่อ ไฟล์  อัตโนมัติ  ป้องกันกรณีชื่อไฟล์ซ้ำกัน
 			$this->load->library('upload', $config);
 			$this->upload->initialize($config);
 			if($this->upload->do_upload('banner_img'))
 			{
-				$data = array('upload_data' => $this->upload->data());
+				$data = array('upload_data' => $this->upload->data());				
 
-				$data_insert = array(	'banner_id' => $this->input->post('banner_id'),
+				$data_insert = array('banner_id' => $this->input->post('banner_id'),
 						'banner_name' => $this->input->post('banner_name'),
 						'banner_img' => $data['upload_data']['file_name'],
 						'banner_date' => date('Y-m-d H:i:s'),
 						'banner_linkweb' => $this->input->post('banner_linkweb'),
+						'banner_status' => "on",
 						'banner_personnel_id' => $this->session->userdata('login_id')
 					);
+
+					$cover_image = $this->resizeImage($this->upload->data(),1440,490,80);
+
 				if($this->Admin_model_banner->banner_insert($data_insert) == 1){
 					$this->session->set_flashdata(array('msg'=> 'ok','messge' => 'บันทึกข้อมูลสำเร็จ'));
 					redirect('admin/banner', 'refresh');
@@ -94,13 +115,15 @@ class Control_admin_banner extends CI_Controller {
 				//print_r($error['error']);
 				$this->session->set_flashdata(array('msg_uploadfile'=> 'on','messge' => 'รูปไม่ได้ขนาดที่กำหนดไว้'));
 				?>
-				<script>					
-					  window.history.back();					
-					</script>
-				<?php
+<script>
+window.history.back();
+</script>
+<?php
 			}
 		
 	}
+
+
 
 	public function edit_banner($id)
 	{

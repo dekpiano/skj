@@ -1,8 +1,5 @@
 
-<?php $this->load->view('user/popupSpecial/skj-slide.php'); ?>
-
-
-
+ <?php $this->load->view('user/popupSpecial/skj-slide.php'); ?> 
 
 <!-- Modal สวัสดีปีใหม่-->
 <!-- <div class="modal fade" id="showyear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -132,11 +132,31 @@
 }
 </style>
 
-<div class="skjadmission65" style=" background-image: linear-gradient(180deg, #52a0fd, #e8f2fd);">
+<div class="skjadmission65"
+    style=" background-image: linear-gradient(180deg, #293649, #293649); background-image:url(uploads/banner/65admission/bg.png);background-size: cover;">
+    <div class="container ">
+        <div class="row vh-100">
+            <div
+                class="col-md-6 col-lg-8 col-xl-7 align-self-md-center setion1  animate__animated animate__fadeInLeft animate__delay-1s">
+                <div>
+                    <h1 class="text-white">ขยายเวลา...<small>รับสมัครนักเรียน</small>  </h1>
+                    <h1 class="text-white"> รอบโควตา ม.3 จากโรงเรียนเดิม </h1>
+                    <h3 class="text-white">
+                        ปีการศึกษา 2565
+                    </h3>
+                    <h3 class="text-white">
+                        ตั้งแต่วันนี้ - 4 กุมภาพันธ์ 2656 นี้...
+                    </h3>
+                    <a href="https://admission.skj.ac.th/" class="btn btn-outline-light mb-2">สมัครเรียน</a>
+                </div>
+            </div>
+            <div
+                class="col-md-6 col-lg-4 col-xl-5 align-self-md-center skjadmission65-banner animate__animated animate__fadeInRight animate__delay-1s">
+                <img src="<?=base_url('uploads/banner/65admission/logo.png');?>" alt="" class="img-fluid" style="">
+            </div>
 
-    <a target="_blank" href="https://drive.google.com/file/d/1zeBOmrYsIl7j9YVyRiuKBODbX1Bi3-WX/view?usp=sharing">
-        <img src="<?=base_url('uploads/banner/all/admis65.png');?>" alt="ห้องเรียนออนไลน์" class="w-100">
-    </a>
 
 
+        </div>
+    </div>
 </div>

@@ -29,7 +29,7 @@
                             </thead>
                             <?php foreach ($banner as $key => $v_banner) : ?>
                             <tr>
-                                <td><img src="<?=base_url()?>uploads/banner/<?=$v_banner->banner_img;?>"
+                                <td><img src="<?=base_url()?>uploads/banner/all/<?=$v_banner->banner_img;?>"
                                         class="img-fluid" alt="Responsive image"></td>
                                 <td><?=$v_banner->banner_name;?></td>
                                 <td><?=$v_banner->banner_date;?></td>
