@@ -130,7 +130,7 @@
                         class="btn btn-primary mb-2">ห้องเรียนออนไลน์</a>
                 </div>
             </div>
-        <div class="col-md-12 col-lg-4 col-xl-5 align-self-md-center banner animate__animated animate__fadeInRight animate__delay-1s">
+        <div class="col-md-12 col-lg-4g col-xl-5 align-self-md-center banner animate__animated animate__fadeInRight animate__delay-1s">
                 <img src="<?=base_url('uploads/banner/64ClassSchedule/logo.svg');?>" alt="" class="img-fluid">
             </div>
            
