@@ -35,12 +35,10 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <?php $this->load->view('user/popupSpecial/skj-650227-exam.php'); ?>
+            <?php $this->load->view('user/popupSpecial/skj-650323-sob65.php'); ?>
         </div>
-        <!-- <div class="carousel-item">
-            <?php $this->load->view('user/popupSpecial/skj-650119-admission2565.php'); ?>
-        </div>
-        <div class="carousel-item">
+        
+        <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
         </div>
 
@@ -49,7 +47,7 @@
         </div>
         <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640528-emailSchool.php'); ?>
-        </div> -->
+        </div>
 
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
