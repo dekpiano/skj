@@ -134,11 +134,8 @@
 
 <div class="skjadmission65" style=" background-image: linear-gradient(180deg, #52a0fd, #e8f2fd);">
 
-    <a target="_blank" href="https://admission.skj.ac.th/">
-
-        <img src="<?=base_url('uploads/banner/all/admis65-1.png');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
-        <img src="<?=base_url('uploads/banner/all/admis65.png');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
-
+    <a target="_blank" href="https://www.facebook.com/SKJNS160/posts/5013262082100042">
+        <img src="<?=base_url('uploads/banner/all/songkran65.png');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
     </a>
 
 
