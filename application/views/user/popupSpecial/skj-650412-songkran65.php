@@ -116,7 +116,9 @@
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .skjadmission65 {}
+    .skjadmission65 {
+        margin-top: 75px;
+    }
 
     .skjadmission65 h1 {
         font-size: 3.0rem;
@@ -134,8 +136,8 @@
 
 <div class="skjadmission65" style=" background-image: linear-gradient(180deg, #52a0fd, #e8f2fd);">
 
-    <a target="_blank" href="https://admission.skj.ac.th/">
-        <img src="<?=base_url('uploads/banner/all/oon.jpg');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
+    <a target="_blank" href="https://www.facebook.com/SKJNS160/posts/5013262082100042">
+        <img src="<?=base_url('uploads/banner/all/admis65-2.png');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
     </a>
 
 

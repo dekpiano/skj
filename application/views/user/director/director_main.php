@@ -9,7 +9,7 @@
                     <span class="icon"><i class="fa fa-flask" aria-hidden="true"></i></span><!-- .Icon ends here -->
                     <div class="service-content">
                         <h4>ด้านวิชาการ</h4>
-                        <p>ส่งเสริมทางด้านคณิตศาสตร์ วิทยาศาสตร์
+                        <p>ส่งเสริมทางด้านคณิตศาสตร์ วิทยาศาสตร์และเทคโนโลยี
                         </p>
                     </div><!-- .Service-content ends here -->
                 </div><!-- .Services-box ends here -->

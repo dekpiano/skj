@@ -34,10 +34,10 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
     </ol>
     <div class="carousel-inner">
-      
-        <div class="carousel-item active">
-            <?php $this->load->view('user/popupSpecial/skj-650119-admission2565.php'); ?>
+    <div class="carousel-item active">
+            <?php $this->load->view('user/popupSpecial/skj-650412-songkran65.php'); ?>
         </div>
+      
         <div class="carousel-item">
             <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
         </div>
