@@ -53,7 +53,9 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+    .skjadmission65 .banner {
+        margin-top: 60px;
+    }
     .skjadmission65 h1 {
         font-size: 3rem;
         color: #fbd54a;
@@ -84,7 +86,9 @@
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+    .skjadmission65 .banner {
+        margin-top: 60px;
+    }
 
     .skjadmission65 h1 {
         font-size: 3rem;
@@ -117,7 +121,7 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .skjadmission65 {
-        margin-top: 75px;
+        margin-top: 60px;
     }
 
     .skjadmission65 h1 {
@@ -136,8 +140,8 @@
 
 <div class="skjadmission65" style=" background-image: linear-gradient(180deg, #52a0fd, #e8f2fd);">
 
-    <a target="_blank" href="https://www.facebook.com/SKJNS160/posts/5013262082100042">
-        <img src="<?=base_url('uploads/banner/all/admis65-2.png');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
+    <a target="_blank" href="https://admission.skj.ac.th/">
+        <img src="<?=base_url('uploads/banner/all/bg_openschool.png');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
     </a>
 
 
