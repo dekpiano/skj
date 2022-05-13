@@ -37,9 +37,9 @@
     <div class="carousel-item active">
             <?php $this->load->view('user/popupSpecial/skj-650412-songkran65.php'); ?>
         </div>
-<!--       
+     
         <div class="carousel-item">
-            <?php $this->load->view('user/popupSpecial/skj-640603-ClassSchedule.php'); ?>
+            <?php $this->load->view('user/popupSpecial/skj-650513-tableLern.php'); ?>
         </div>
 
         <div class="carousel-item ">
@@ -47,7 +47,7 @@
         </div>
         <div class="carousel-item ">
             <?php $this->load->view('user/popupSpecial/skj-640528-emailSchool.php'); ?>
-        </div> -->
+        </div> 
 
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
