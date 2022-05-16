@@ -35,6 +35,9 @@
     </ol>
     <div class="carousel-inner">
     <div class="carousel-item active">
+            <?php $this->load->view('user/popupSpecial/skj-650412-songkran65-1.php'); ?>
+        </div>
+    <div class="carousel-item">
             <?php $this->load->view('user/popupSpecial/skj-650412-songkran65.php'); ?>
         </div>
      
