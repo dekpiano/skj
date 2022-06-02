@@ -140,8 +140,8 @@
 
 <div class="skjadmission65" style=" background-image: linear-gradient(180deg, #52a0fd, #e8f2fd);">
 
-    <a target="_blank" href="#">
-        <img src="<?=base_url('uploads/banner/all/bg_openschool.png');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
+    <a target="_blank" href="https://academic.skj.ac.th/ClassSchedule">
+        <img src="<?=base_url('uploads/banner/all/bg_tableLearn.png');?>" alt="ห้องเรียนออนไลน์" class="w-100 banner">
     </a>
 
 
