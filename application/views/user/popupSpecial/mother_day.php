@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>เนื่องในโอกาสวันเฉลิมพระชนมพรรษา สมเด็จพระนางเจ้า ฯ พระบรมราชินี ๓ มิถุนายน ๒๕๖๔</title>
+    <title>เนื่องในโอกาสวันเฉลิมพระชนมพรรษา สมเด็จพระนางเจ้าสุทิดา พัชรสุธาพิมลลักษณ พระบรมราชินี ๓ มิถุนายน ๒๕๖๕</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
         content="เป็นผู้นำ รักเพื่อน นับถือพี่ เคารพครู กตัญญูพ่อแม่ ดูแลน้อง สนองคุณแผ่นดิน โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์" />
@@ -15,7 +15,7 @@
     <meta name="revisit-after" content="1 day" />
     <meta name="author" content="Dekpiano" />
     <meta property="og:url" content="https://skj.ac.th" />
-    <meta property="og:title" content="เนื่องในโอกาสวันเฉลิมพระชนมพรรษา สมเด็จพระนางเจ้า ฯ พระบรมราชินี ๓ มิถุนายน ๒๕๖๔" />
+    <meta property="og:title" content="เนื่องในโอกาสวันเฉลิมพระชนมพรรษา สมเด็จพระนางเจ้าสุทิดา พัชรสุธาพิมลลักษณ พระบรมราชินี ๓ มิถุนายน ๒๕๖๕" />
     <meta property="og:description"
         content="เป็นผู้นำ รักเพื่อน นับถือพี่ เคารพครู กตัญญูพ่อแม่ ดูแลน้อง สนองคุณแผ่นดิน โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์" />
     <meta property="og:type" content="website" />
@@ -136,7 +136,9 @@ h3 {
 /* tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
     img {
-        width: 320px;
+        width: 364px;
+    position: absolute;
+    margin: -95px -160px;
     }
 
     h1 {
@@ -144,7 +146,7 @@ h3 {
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 31px;
     }
 
     h3 {
@@ -153,6 +155,10 @@ h3 {
 
     .golden-btn {
         font-size: 14px;
+    }
+
+    .content{
+        padding-top: 220px;
     }
 
     p.logo-r::before {
@@ -173,7 +179,9 @@ h3 {
 
 @media (max-width: 575.98px) {
     img {
-        width: 199px;
+        width: 330px;
+    position: absolute;
+    margin: -99px -160px;
     }
 
     h1 {
@@ -191,6 +199,8 @@ h3 {
     .golden-btn {
         font-size: 10px;
     }
+
+   
 
     p.logo-r::before {
         content: "";
@@ -215,7 +225,9 @@ h3 {
 
 @media (min-width: 1400px) {
     img {
-        width: 450px;
+        position: fixed;
+    width: 692px;
+    margin: -419px -208px;
     }
 
     p.logo-r::before {
@@ -239,6 +251,19 @@ h3 {
     min-height: 100vh;
     height: auto;
 }
+
+#bg_top {
+    position: absolute;
+    background-image: url(uploads/banner/65-3-mother/bg_top.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 1920px;
+    height: 467px;
+    left: 0px;
+    top: 433px;
+    opacity: 0;
+    z-index: 23;
+}
 </style>
 
 <body>
@@ -248,13 +273,13 @@ h3 {
             <source src="<?=base_url('uploads/video/video-bg-violet.mp4')?>" type="video/mp4">
         </video>
     </div>
-    <div id="main" class="container ">
+    <div id="main" class="">
         <div class="row">
-            <div class="col-md-6 order-1 text-center align-self-center">
+            <div class="mt-5 col-lg-7 col-md-12 col-sm-6 order-1 text-center align-self-center content">
                 <div class="">
                     <h2> เนื่องในโอกาสวันเฉลิมพระชนมพรรษา <br>
-                        สมเด็จพระนางเจ้า ฯ พระบรมราชินี<br>
-                        ๓ มิถุนายน ๒๕๖๔
+                        สมเด็จพระนางเจ้าสุทิดา พัชรสุธาพิมลลักษณ พระบรมราชินี<br>
+                        ๓ มิถุนายน ๒๕๖๕
                     </h2><br>
 
                     <p class="logo-r">
@@ -267,13 +292,12 @@ h3 {
                     <button onclick="sigewebsite()" class="golden-btn">เข้าสู่เว็บไซต์</button>
                 </div>
             </div>
-            <div class="col-md-6 order-md-1 text-center align-self-center">
-                <img class="img-fluid" src="<?=base_url('uploads/video/logo-mother.png')?>" alt="">
+            <div class="col-lg-5 col-md-12 col-sm-6 order-md-0 order-lg-1 text-center align-self-center">
+                <img class="img-fluid" src="<?=base_url('uploads/banner/65-3-mother/qreen.png')?>" alt="">
             </div>
 
         </div>
     </div>
-
 
 </body>
 <!-- Optional JavaScript -->
