@@ -12,7 +12,9 @@
             <div class="card shadow mb-4">
                 <div class="card-header py-3 ">
                     <h6 class="m-0 font-weight-bold text-primary ">ตารางข้อมูล<?=$title;?> <a
-                            href="<?=base_url('admin/banner/add');?>" class="btn btn-primary btn-sm float-end text-white"> <i class="far fa-plus-square"></i> เพิ่ม<?=$title;?></a></h6>
+                            href="<?=base_url('admin/banner/add');?>"
+                            class="btn btn-primary btn-sm float-end text-white"> <i class="far fa-plus-square"></i>
+                            เพิ่ม<?=$title;?></a></h6>
 
                 </div>
                 <div class="card-body">
@@ -21,6 +23,7 @@
                         <table class="table " id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
+                                    <th>สถานะ</th>
                                     <th>รูป</th>
                                     <th>ชื่อ<?=$title;?></th>
                                     <th>วันที่ลง</th>
@@ -29,6 +32,13 @@
                             </thead>
                             <?php foreach ($banner as $key => $v_banner) : ?>
                             <tr>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" ban-id="<?=$v_banner->banner_id?>" name="banner_status" type="checkbox" id="banner_status"
+                                          <?=$v_banner->banner_status=="on"?"checked":""?>   value="<?=$v_banner->banner_status?>">
+                                        <label class="form-check-label" for="banner_status"></label>
+                                    </div>
+                                </td>
                                 <td><img src="<?=base_url()?>uploads/banner/all/<?=$v_banner->banner_img;?>"
                                         class="img-fluid" alt="Responsive image"></td>
                                 <td><?=$v_banner->banner_name;?></td>

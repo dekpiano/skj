@@ -50,7 +50,7 @@ class Control_admin_banner extends CI_Controller {
 		$data['banner'] =	$this->db->get()->result();
 		
 		$num = @explode("_", $data['banner'][0]->banner_id);
-        $num1 = @sprintf("%03d",$num[1]+1);
+        $num1 = @sprintf("%05d",$num[1]+1);
         $data['banner'] = 'banner_'.$num1;
         $data['action'] = 'insert_banner';
 
@@ -93,7 +93,7 @@ class Control_admin_banner extends CI_Controller {
 			{
 				$data = array('upload_data' => $this->upload->data());				
 
-				$data_insert = array('banner_id' => $this->input->post('banner_id'),
+				$data_insert = array(
 						'banner_name' => $this->input->post('banner_name'),
 						'banner_img' => $data['upload_data']['file_name'],
 						'banner_date' => date('Y-m-d H:i:s'),
@@ -102,7 +102,7 @@ class Control_admin_banner extends CI_Controller {
 						'banner_personnel_id' => $this->session->userdata('login_id')
 					);
 
-					$cover_image = $this->resizeImage($this->upload->data(),1440,490,80);
+					$cover_image = $this->resizeImage($this->upload->data(),1920,720,70);
 
 				if($this->Admin_model_banner->banner_insert($data_insert) == 1){
 					$this->session->set_flashdata(array('msg'=> 'ok','messge' => 'บันทึกข้อมูลสำเร็จ'));
@@ -113,12 +113,10 @@ class Control_admin_banner extends CI_Controller {
 			{
 				$error = array('error' => $this->upload->display_errors());
 				//print_r($error['error']);
-				$this->session->set_flashdata(array('msg_uploadfile'=> 'on','messge' => 'รูปไม่ได้ขนาดที่กำหนดไว้'));
-				?>
-<script>
-window.history.back();
-</script>
-<?php
+				$this->session->set_flashdata(array('msg'=> 'ok','messge' => 'รูปไม่ได้ขนาดที่กำหนดไว้ ไม่เกิน 1920 X 720 px'));
+				redirect('admin/banner/add', 'refresh');
+				
+				
 			}
 		
 	}
@@ -190,6 +188,18 @@ window.history.back();
 
 	
 		
+	}
+
+	public function change_status(){
+		$ID = $this->input->post('BanId');
+		$Valus = $this->input->post('Valus');
+		if($Valus === "on"){
+			$V = "off";
+		}else{
+			$V = "on";
+		}
+		$data = array('banner_status' => $V);
+		echo $this->Admin_model_banner->banner_offon($data,$ID);
 	}
 
 	public function delete_banner($data,$img)

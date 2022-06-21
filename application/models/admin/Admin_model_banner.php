@@ -17,6 +17,10 @@ class Admin_model_banner extends CI_Model
 		return $this->db->update('tb_banner',$data,"banner_id='".$this->input->post('banner_id')."'");
 	}
 
+	public function banner_offon($data,$ID){
+		return $this->db->update('tb_banner',$data,"banner_id=".$ID);
+	}
+
 	public function banner_delete($id)
 	{
 				$this->db->where('banner_id', $id);

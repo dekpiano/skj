@@ -1,6 +1,9 @@
 <!-- Banner -->
 <?php $this->load->view('user/banner/banner_main.php') ?>
-<!--End Banner-->
+
+<!-- ประชาสัมพันธ์ -->
+<?php $this->load->view('user/news/news_main_v2.php'); ?>
+
 <?php $this->load->view('user/services/services_skj.php'); ?>
 <style>
     /* // Extra small devices (portrait phones, less than 576px) */
@@ -30,8 +33,7 @@
 
 </style>
 
-<!-- ประชาสัมพันธ์ -->
-<?php $this->load->view('user/news/news_main_v2.php'); ?>
+
 <?php $this->load->view('user/popupSpecial/skj-covid19.php'); ?>
 <?php $this->load->view('user/video/video_main.php'); ?>
 

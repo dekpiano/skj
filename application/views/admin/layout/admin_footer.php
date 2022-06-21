@@ -20,6 +20,8 @@
  <script src="<?= base_url() ?>asset/js/demo/datatables-demo.js?v=1001"></script>
  <script src="<?= base_url() ?>asset/js/demo/select-form.js?v=1"></script>
 
+ <script src="<?=base_url();?>asset/admin/js/skj-banner.js?V1"></script>
+
  <script>
   $(":input").inputmask();
  // Example starter JavaScript for disabling form submissions if there are invalid fields

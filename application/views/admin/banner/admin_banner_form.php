@@ -86,8 +86,8 @@
                                         <div class="upload-btn-wrapper">
                                             <button class="btn1">เลือกไฟล์</button>
                                             <input type="file" name="banner_img" id="banner_img" class="banner_img" />
-                                            <small id="emailHelp" class="form-text text-muted">ขนาดรูปที่อัฟโหลด 1440 X
-                                                490 px</small>
+                                            <small id="emailHelp" class="form-text text-muted">ขนาดรูปที่อัฟโหลด 1920 X
+                                                720 px</small>
                                         </div>
                                     </div>
                                 </div>

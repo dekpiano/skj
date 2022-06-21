@@ -1,15 +1,27 @@
 <style>
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .slide{
+        margin-top:  37px;
+    }
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .slide{
+        margin-top: 60px;
+    }
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .slide{
+        margin-top:  60px;
+    }
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -18,6 +30,9 @@
     .skjChcekMain h1 {
         font-size: 3rem;
     }
+    .slide{
+        margin-top: 56px;
+    }
 
 }
 </style>
@@ -25,32 +40,17 @@
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+    <?php foreach ($banner as $key => $v_banner) :?>
+        <li data-target="#carouselExampleIndicators" data-slide-to="<?=$key;?>" <?=$key==0?" class='active'":""?> ></li>
+       
+        <?php endforeach; ?>
     </ol>
     <div class="carousel-inner">
-    <div class="carousel-item active">
-            <?php $this->load->view('user/popupSpecial/skj-650412-songkran65-1.php'); ?>
+        <?php foreach ($banner as $key => $v_banner) :?>
+        <div class="carousel-item <?=$key==0?"active":""?> ">
+                <img src="<?=base_url('uploads/banner/all/'.$v_banner->banner_img)?>" class="d-block w-100" alt="<?=$v_banner->banner_name?>">
         </div>
-    <div class="carousel-item">
-            <?php $this->load->view('user/popupSpecial/skj-650412-songkran65.php'); ?>
-        </div>
-     
-        <div class="carousel-item">
-            <?php $this->load->view('user/popupSpecial/skj-650513-tableLern.php'); ?>
-        </div>
-
-        <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640610-Classroom.php'); ?>
-        </div>
-        <div class="carousel-item ">
-            <?php $this->load->view('user/popupSpecial/skj-640528-emailSchool.php'); ?>
-        </div> 
+        <?php endforeach; ?>
 
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

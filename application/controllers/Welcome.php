@@ -27,6 +27,7 @@ class Welcome extends CI_Controller
             ->get('tb_news')
             ->result(); //ประชาสัมพันธ์
         $data['banner'] = $this->db
+            ->where('banner_status', 'on')
             ->order_by('banner_id', 'desc')
             ->get('tb_banner')
             ->result(); //ประชาสัมพันธ์
