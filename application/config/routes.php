@@ -165,3 +165,6 @@ $route['RoomLearning'] = 'Control_RoomLearning';
 $route['SkjClassroom'] = 'Control_SkjClassroom';
 //ทุการศึกษษ
 $route['guidance'] = 'control_guidance/guidance_main';
+
+//คะแนนกีฬาสี
+$route['SportsScore'] = 'welcome/SportsScore';

@@ -75,7 +75,29 @@ class Welcome extends CI_Controller
     {
         $this->load->view('user/popupSpecial/father5_day.php');
     }
+    
 
+    public function SportsScore()
+    {
+        $data['full_url'] =
+        (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'
+            ? 'https'
+            : 'http') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        $data['title'] = "ตารางและผลการแข่งขัน กีฬาสีภายใน สวนกุหลาบ 9 เกมส์ ครั้งที่ 14 2565";
+        $data['description'] = "ตารางและผลการแข่งขัน 2565";
+        $data['lear'] =	$this->db->get('tb_learning')->result(); //กลุ่มสาระ
+		$data['posi'] =	$this->db->where('posi_id >=','posi_007')->get('tb_position')->result(); //ตำแหน่งบุคลากร
+		$data['Allabout'] = $this->db->get('tb_aboutschool')->result(); //เกี่ย่วกับโรงเรียน
+        $data['news_p'] = $news_today = $this->db->where('news_category','ข่าวประชาสัมพันธ์')->order_by('news_date','DESC')->limit('5')->get('tb_news')->result();
+		$data['news_k'] = $news_today = $this->db->where('news_category','ข่าวกิจกรรม')->order_by('news_date','DESC')->limit('5')->get('tb_news')->result();
+		$data['news_pg'] = $news_today = $this->db->where('news_category','ข่าวประกาศ')->order_by('news_date','DESC')->limit('5')->get('tb_news')->result();		
+        $data['banner'] =	base_url('uploads/sport/banner1.png');
+        $this->load->view('user/layout/header.php', $data);
+        $this->load->view('user/SportsScore/SportsScore.php');
+        $this->load->view('user/layout/footer.php');
+
+
+    }
 
     
 }

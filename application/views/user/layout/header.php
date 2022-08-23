@@ -24,6 +24,8 @@
     <meta property="og:image" content="<?=base_url('asset/user/img/SkjClassroom/bg.png');?>" />
     <?php elseif($this->uri->segment(1)=="Email"): ?>
     <meta property="og:image" content="<?=base_url('asset/user/img/BannerEmailSchool.PNG');?>" />
+    <?php elseif($this->uri->segment(1)=="SportsScore"): ?>
+    <meta property="og:image" content="<?=$banner;?>" />
     <?php else: ?>
     <meta property="og:image"
         content="<?= @$news[0]->news_img == '' ? base_url('asset/user/img/banner_main.jpg'): base_url('uploads/news/') . $news[0]->news_img ?>" />
