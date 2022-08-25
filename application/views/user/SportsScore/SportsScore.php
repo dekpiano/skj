@@ -1,38 +1,38 @@
 <style>
-
 @media (max-width: 575.98px) {
-    .page-content{
+    .page-content {
         padding-top: 125px;
     }
-    .page-content h1{
-        font-size:31px
+
+    .page-content h1 {
+        font-size: 31px
     }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-    
-}
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .page-content{
+    .page-content {
         padding-top: 90px;
     }
-    .page-content h1{
-        font-size:31px
+
+    .page-content h1 {
+        font-size: 31px
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .page-content{
+    .page-content {
         padding-top: 130px;
     }
-    .page-content h1{
-        font-size:35px
+
+    .page-content h1 {
+        font-size: 35px
     }
 }
 
 @media (min-width: 1200px) {
-    .page-content{
+    .page-content {
         padding-top: 120px;
     }
 }
@@ -45,8 +45,9 @@
     -ms-box-shadow: none
 }
 
-#htmltable th ,td{
-    text-align:center;
+#htmltable th,
+td {
+    text-align: center;
 }
 
 .pl-3,
@@ -124,8 +125,8 @@
     border-radius: 0
 }
 
-.page-content{
-    background-image:url(uploads/sport/background.svg);
+.page-content {
+    background-image: url(uploads/sport/background.svg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -169,6 +170,10 @@ $range_26 = '26 สิงหาคม 2565!A2:F80'; // here we use the name of t
 $response_26 = $service->spreadsheets_values->get($spreadsheetId, $range_26);
 $values_26 = $response_26->getValues();
 
+$range_thai = 'กีฬาไทย!A2:E35'; // here we use the name of the Sheet to get all the rows
+$response_thai = $service->spreadsheets_values->get($spreadsheetId, $range_thai);
+$values_thai = $response_thai->getValues();
+
 ?>
         <div class="row d-flex justify-content-center mt-3">
             <div class="col-lg-8 grid-margin stretch-card">
@@ -190,7 +195,7 @@ $values_26 = $response_26->getValues();
                                         <th>รายการ</th>
                                         <th>คู่แข่งขัน</th>
                                         <th>ผลการแข่งขัน</th>
-                                         <th>หมายเหตุ</th>
+                                        <th>หมายเหตุ</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -213,9 +218,9 @@ $values_26 = $response_26->getValues();
                                         </td>
                                         <td class="text-center">
                                             <?php if(isset($value_23[5])):?>
-                                                <?=$value_23[5]?>
+                                            <?=$value_23[5]?>
                                             <?php else: ?>
-                                            
+
                                             <?php endif; ?>
                                         </td>
                                     </tr>
@@ -317,12 +322,15 @@ $values_26 = $response_26->getValues();
                                         <td><?=$value_25[3]?></td>
                                         <td>
                                             <?php if(isset($value_25[4])):?>
-                                            <?php if($value_25[4] != "ผลการแข่งขัน"): ?>
+                                            <?php if($value_25[4] != "ผลการแข่งขัน" && $value_25[4] ==""): ?>
                                             ผลการแข่งขัน
                                             <?php else: ?>
-                                            <label class="badge badge-Success"><?=$value_25[4]?></label>
+                                            <?php if($value_25[4] == "ผลการแข่งขัน") :  ?>
+                                                <?=$value_25[4]?>
+                                            <?php else: ?>
+                                                <label class="badge badge-success"><?=$value_25[4]?></label>
                                             <?php endif; ?>
-
+                                            <?php endif; ?>
                                             <?php else: ?>
                                             <label class="badge badge-danger">รอผลการแข่งขัน</label>
                                             <?php endif; ?>
@@ -330,7 +338,7 @@ $values_26 = $response_26->getValues();
                                         <td>
                                             <?php if(isset($value_25[5])):?>
                                             <?php if($value_25[5] != "หมายเหตุ"): ?>
-                                                หมายเหตุ
+                                            หมายเหตุ
                                             <?php else: ?>
                                             <label class="badge badge-Success"><?=$value_25[5]?></label>
                                             <?php endif; ?>
@@ -381,13 +389,16 @@ $values_26 = $response_26->getValues();
                                         <td><?=$value_26[2]?></td>
                                         <td><?=$value_26[3]?></td>
                                         <td>
-                                            <?php if(isset($value_26[4])):?>
-                                            <?php if($value_26[4] != "ผลการแข่งขัน"): ?>
+                                        <?php if(isset($value_26[4])):?>
+                                            <?php if($value_26[4] != "ผลการแข่งขัน" && $value_26[4] ==""): ?>
                                             ผลการแข่งขัน
                                             <?php else: ?>
-                                            <label class="badge badge-Success"><?=$value_26[4]?></label>
+                                            <?php if($value_26[4] == "ผลการแข่งขัน") :  ?>
+                                                <?=$value_26[4]?>
+                                            <?php else: ?>
+                                                <label class="badge badge-success"><?=$value_26[4]?></label>
                                             <?php endif; ?>
-
+                                            <?php endif; ?>
                                             <?php else: ?>
                                             <label class="badge badge-danger">รอผลการแข่งขัน</label>
                                             <?php endif; ?>
@@ -395,7 +406,7 @@ $values_26 = $response_26->getValues();
                                         <td>
                                             <?php if(isset($value_26[5])):?>
                                             <?php if($value_26[5] != "หมายเหตุ"): ?>
-                                                หมายเหตุ
+                                            หมายเหตุ
                                             <?php else: ?>
                                             <label class="badge badge-Success"><?=$value_26[5]?></label>
                                             <?php endif; ?>
@@ -412,5 +423,72 @@ $values_26 = $response_26->getValues();
                 </div>
             </div>
         </div>
+
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="col-lg-8 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="card-title">โปรแกรมการแข่งขันกีฬาไทยพื้นบ้าน </h2>
+                                <p class="card-description"> </p>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="htmltable" class="table table-hover">
+                                <thead>
+                                    <tr class="bg-primary text-white h3">
+                                        <th>ลำดับ</th>
+                                        <th>รายการ</th>
+                                        <th>คู่แข่งขัน</th>
+                                        <th>ผลการแข่งขัน</th>
+                                        <th>หมายเหตุ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php 
+                                    foreach ($values_thai as $key => $value_thai) :
+                                    ?>
+                                    <tr <?=$value_thai[0] == "ลำดับ"?'class="bg-primary text-white h3"':""?>>
+                                        <td><?=$value_thai[0]?></td>
+                                        <td><?=$value_thai[1]?></td>
+                                        <td><?=$value_thai[2]?></td>
+                                        <td>
+                                        <?php if(isset($value_thai[3])):?>
+                                            <?php if($value_thai[3] != "ผลการแข่งขัน" && $value_thai[3] ==""): ?>
+                                            ผลการแข่งขัน
+                                            <?php else: ?>
+                                            <?php if($value_thai[3] == "ผลการแข่งขัน") :  ?>
+                                                <?=$value_thai[3]?>
+                                            <?php else: ?>
+                                                <label class="badge badge-success"><?=$value_thai[3]?></label>
+                                            <?php endif; ?>
+                                            <?php endif; ?>
+                                            <?php else: ?>
+                                            <label class="badge badge-danger">รอผลการแข่งขัน</label>
+                                            <?php endif; ?>
+                                        </td>
+                                        <td>
+                                            <?php if(isset($value_thai[4])):?>
+                                            <?php if($value_thai[4] != "หมายเหตุ"): ?>
+                                            หมายเหตุ
+                                            <?php else: ?>
+                                            <label class="badge badge-Success"><?=$value_thai[4]?></label>
+                                            <?php endif; ?>
+
+                                            <?php else: ?>
+                                            <?php endif; ?>
+                                        </td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
