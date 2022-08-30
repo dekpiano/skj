@@ -1529,17 +1529,17 @@ a.img,
                                             </a>
                                             <ul class="nav-dropdown">
                                                 <li>
-                                                    <a href="https://academic.skj.ac.th/LoginTeacher"><i
+                                                    <a href="https://teacher.skj.ac.th/"><i
                                                             class="icofont-login icofont-1x"></i>
                                                         เข้าสู่ระบบ
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <a href="https://academic.skj.ac.th/ReportLearnOnline"><i
                                                             class="icofont-save icofont-1x"></i>
                                                         บันทึกเวลาสอนออนไลน์
                                                     </a>
-                                                </li>
+                                                </li> -->
                                             </ul>
 
                                         </li>
